@@ -19,19 +19,19 @@ dependencies{
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "runnect.android.application"
+            id = "runnect.plugin.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidLibrary") {
-            id = "runnect.android.library"
+            id = "runnect.plugin.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidHilt") {
-            id = "runnect.android.hilt"
+            id = "runnect.plugin.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
         register("javaLibrary") {
-            id = "runnect.java.library"
+            id = "runnect.plugin.java.library"
             implementationClass = "JavaLibraryConventionPlugin"
         }
         register("FeaturePlugin") {
