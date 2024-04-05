@@ -10,8 +10,8 @@ internal class FeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("runnect.android.library")
-                apply("runnect.android.hilt")
+                apply("runnect.plugin.android.library")
+                apply("runnect.plugin.android.hilt")
                 apply("androidx.navigation.safeargs.kotlin")
             }
 
@@ -31,6 +31,7 @@ internal class FeatureConventionPlugin : Plugin<Project> {
                 "implementation"(libs.findLibrary("androidx.activity.ktx").get())
                 "implementation"(libs.findLibrary("androidx.fragment.ktx").get())
                 "implementation"(libs.findLibrary("androidx.recyclerview").get())
+                "implementation"(libs.findLibrary("androidx.livedata").get())
                 "implementation"(libs.findLibrary("google.material").get())
 
                 "implementation"(libs.findLibrary("kotlinx.coroutines.android").get())
