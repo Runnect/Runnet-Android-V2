@@ -15,3 +15,28 @@ dependencies{
     compileOnly(libs.kotlin.gradle.plugin)
     compileOnly(libs.ksp.gradle.plugin)
 }
+
+gradlePlugin {
+    plugins {
+        register("androidApplication") {
+            id = "runnect.android.application"
+            implementationClass = "AndroidApplicationConventionPlugin"
+        }
+        register("androidLibrary") {
+            id = "runnect.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("androidHilt") {
+            id = "runnect.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
+        }
+        register("javaLibrary") {
+            id = "runnect.java.library"
+            implementationClass = "JavaLibraryConventionPlugin"
+        }
+        register("FeaturePlugin") {
+            id = "runnect.plugin.feature"
+            implementationClass = "FeatureConventionPlugin"
+        }
+    }
+}
