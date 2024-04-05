@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google()
         mavenCentral()
@@ -16,9 +17,7 @@ dependencyResolutionManagement {
 rootProject.name = "Runnect"
 include(":app")
 include(":core")
-include(":build-logic")
 include(":core:domain")
 include(":core:data")
 include(":core:base")
 include(":navigator")
-include(":build-logic:convention")

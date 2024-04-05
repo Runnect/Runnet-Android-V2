@@ -1,7 +1,6 @@
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     `kotlin-dsl`
-    alias(libs.plugins.org.jetbrains.kotlin.jvm)
 }
 
 java {
@@ -13,5 +12,6 @@ java {
 
 dependencies{
     compileOnly(libs.android.gradle.plugin)
-
+    compileOnly(libs.kotlin.gradle.plugin)
+    compileOnly(libs.ksp.gradle.plugin)
 }
