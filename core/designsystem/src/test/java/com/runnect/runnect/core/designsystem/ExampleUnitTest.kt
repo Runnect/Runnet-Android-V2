@@ -1,4 +1,4 @@
-package com.runnect.base
+package com.runnect.runnect.core.designsystem
 
 import org.junit.Test
 

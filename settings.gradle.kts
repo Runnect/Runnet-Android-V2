@@ -17,7 +17,6 @@ dependencyResolutionManagement {
 rootProject.name = "Runnect"
 include(":app")
 include(":core")
-include(":core:domain")
-include(":core:data")
-include(":core:base")
 include(":navigator")
+include(":core:base")
+include(":core:designsystem")
