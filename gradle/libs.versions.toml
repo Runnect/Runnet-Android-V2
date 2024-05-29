@@ -59,6 +59,8 @@ kakao-auth = "2.10.0"
 kakao-sdk = "2.15.0"
 circle-indicator = "2.1.6"
 skeleton-ui = "0.5.0"
+firebase-common-ktx = "21.0.0"
+firebase-firestore-ktx = "25.0.0"
 
 
 [libraries]
@@ -117,7 +119,7 @@ firebase-remoteConfig = { group = "com.google.firebase", name = "firebase-config
 firebase-database = { group = "com.google.firebase", name = "firebase-database-ktx" }
 firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore-ktx"}
 firebase-storage = { group = "com.google.firebase", name = "firebase-storage-ktx"}
-
+firebase-common = { group = "com.google.firebase", name = "firebase-common-ktx", version.ref = "firebase-common-ktx" }
 encrypted-preferences = { group = "androidx.security", name = "security-crypto-ktx", version.ref = "androidx-encrypted-shared-preferences"}
 
 
@@ -136,6 +138,8 @@ kakao-story = {group = "com.kakao.sdk", name="v2-story", version.ref = "kakao-sd
 kakao-link = {group = "com.kakao.sdk", name="v2-link", version.ref = "kakao-sdk"}
 kakao-navi = {group = "com.kakao.sdk", name="v2-navi", version.ref = "kakao-sdk"}
 skeleton-ui = {group = "com.facebook.shimmer", name="shimmer", version.ref = "skeleton-ui"}
+
+
 
 
 

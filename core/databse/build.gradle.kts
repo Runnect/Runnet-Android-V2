@@ -10,6 +10,6 @@ android {
 }
 
 dependencies {
-
-   
+    implementation(libs.firebase.common)
+    implementation(libs.firebase.firestore)
 }
