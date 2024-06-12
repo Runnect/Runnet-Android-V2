@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.extension
+package com.runnect.runnect.util.util.extension
 
 import android.content.Context
 import android.view.inputmethod.InputMethodManager

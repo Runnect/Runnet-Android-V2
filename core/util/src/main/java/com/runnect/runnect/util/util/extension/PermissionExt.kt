@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.extension
+package com.runnect.runnect.util.util.extension
 
 import android.Manifest
 import android.content.Context

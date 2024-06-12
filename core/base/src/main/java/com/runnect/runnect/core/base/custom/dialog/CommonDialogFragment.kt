@@ -2,11 +2,9 @@ package com.runnect.runnect.core.base.custom.dialog
 
 import android.os.Bundle
 import android.view.View
-import com.runnect.runnect.R
+import com.runnect.runnect.core.base.R
 import com.runnect.runnect.core.base.binding.BindingDialogFragment
 import com.runnect.runnect.core.base.databinding.FragmentCommonDialogBinding
-import com.runnect.runnect.databinding.FragmentCommonDialogBinding
-import com.runnect.runnect.util.custom.dialog.CommonDialogText
 import com.runnect.runnect.util.extension.getCompatibleParcelableExtra
 
 class CommonDialogFragment

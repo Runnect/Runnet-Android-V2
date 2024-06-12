@@ -5,7 +5,7 @@ import android.view.View
 import androidx.annotation.DrawableRes
 import androidx.annotation.FontRes
 import androidx.annotation.StringRes
-import com.runnect.runnect.util.custom.popup.PopupItem
+import com.runnect.runnect.core.base.custom.popup.PopupItem
 import com.runnect.runnect.core.base.custom.popup.RunnectPopupMenu
 import com.runnect.runnect.util.extension.dpToPx
 

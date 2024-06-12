@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.callback
+package com.runnect.runnect.util.util.callback
 
 interface ItemCount {
     fun calcItemSize(itemCount: Int)

@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.extension
+package com.runnect.runnect.util.util.extension
 
 fun Double.round(decimals: Int): Double {
     var multiplier = 1.0

@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.preference.StatusType
+package com.runnect.runnect.util.util.preference.statusType
 
 enum class LoginStatus(val value: String) {
     EXPIRED(""), // 토큰 만료

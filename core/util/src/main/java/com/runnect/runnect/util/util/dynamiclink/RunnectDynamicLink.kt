@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.dynamiclink
+package com.runnect.runnect.util.util.dynamiclink
 
 object RunnectDynamicLink {
     const val BASE_URL = "https://rnnt.page.link"

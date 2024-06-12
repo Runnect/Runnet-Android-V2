@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.custom.dialog
+package com.runnect.runnect.core.base.custom.dialog
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
