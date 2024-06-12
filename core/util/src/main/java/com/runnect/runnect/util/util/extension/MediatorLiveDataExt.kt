@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.extension
+package com.runnect.runnect.util.util.extension
 
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData

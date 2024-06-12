@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.extension
+package com.runnect.runnect.util.util.extension
 
 import android.content.Intent
 import android.os.Build.VERSION.SDK_INT

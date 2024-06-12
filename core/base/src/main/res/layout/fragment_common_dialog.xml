@@ -7,7 +7,7 @@
 
         <variable
             name="dialogText"
-            type="com.runnect.runnect.util.custom.dialog.CommonDialogText" />
+            type="com.runnect.runnect.core.base.custom.dialog.CommonDialogText" />
     </data>
 
     <FrameLayout

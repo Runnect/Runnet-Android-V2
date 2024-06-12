@@ -1,13 +1,11 @@
-package com.runnect.runnect.util.custom.dialog
+package com.runnect.runnect.core.base.custom.dialog
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.runnect.runnect.core.designsystem.R.layout
-import com.runnect.runnect.binding.BindingDialogFragment
 import com.runnect.runnect.core.base.binding.BindingDialogFragment
 import com.runnect.runnect.core.base.databinding.FragmentRequireLoginDialogBinding
-import com.runnect.runnect.databinding.FragmentRequireLoginDialogBinding
 import com.runnect.runnect.presentation.login.LoginActivity
 
 class RequireLoginDialogFragment

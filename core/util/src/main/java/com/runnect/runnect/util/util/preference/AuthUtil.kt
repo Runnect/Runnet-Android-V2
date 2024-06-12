@@ -1,4 +1,4 @@
-package com.runnect.runnect.util.preference
+package com.runnect.runnect.util.util.preference
 
 import android.content.Context
 import android.preference.PreferenceManager

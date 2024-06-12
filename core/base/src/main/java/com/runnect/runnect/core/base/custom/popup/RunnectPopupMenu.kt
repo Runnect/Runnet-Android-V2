@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import android.widget.PopupWindow
 import com.google.android.material.transition.platform.SlideDistanceProvider.GravityFlag
 import com.runnect.runnect.R
+import com.runnect.runnect.core.base.R
 import com.runnect.runnect.core.base.databinding.ItemRunnectPopupMenuBinding
 import com.runnect.runnect.core.base.databinding.LayoutRunnectPopupMenuBinding
-import com.runnect.runnect.util.custom.popup.PopupItem
 import com.runnect.runnect.util.util.extension.drawableOf
 
 class RunnectPopupMenu(
