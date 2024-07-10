@@ -30,11 +30,12 @@ androidx-encrypted-shared-preferences = "1.1.0-alpha03"
 androidx-viewpager = "1.0.0"
 
 # kotlin
-ksp = "1.9.10-1.0.13"
-kotlin = "1.9.10"
-kotlinx-coroutines = "1.7.3"
-kotlinx-serialization-json = "1.5.1"
-kotlinx-datetime = "0.4.0"
+ksp = "1.9.23-1.0.20"
+kotlin = "1.9.23"
+kapt = "1.8.22"
+kotlinx-coroutines = "1.8.1"
+kotlinx-serialization-json = "1.6.3"
+kotlinx-datetime = "0.5.0"
 
 # retorift okhtp
 retrofit = "2.9.0"
@@ -42,7 +43,7 @@ retrofit-kotlinx-serialization-json = "1.0.0"
 okhttp = "4.11.0"
 
 # jetpack
-hilt = "2.48"
+hilt = "2.51.1"
 
 # third party
 timber = "5.0.1"
@@ -59,6 +60,9 @@ kakao-auth = "2.10.0"
 kakao-sdk = "2.15.0"
 circle-indicator = "2.1.6"
 skeleton-ui = "0.5.0"
+firebase-common-ktx = "21.0.0"
+firebase-firestore-ktx = "25.0.0"
+play-services-measurement-api = "22.0.0"
 
 
 [libraries]
@@ -76,6 +80,10 @@ ksp-gradle-plugin = { group = "com.google.devtools.ksp", name = "com.google.devt
 
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-core = { group = "com.google.dagger", name = "hilt-core", version.ref = "hilt" }
+hilt-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
+hilt-testing-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+
 
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
@@ -84,7 +92,9 @@ kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime",
 
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofit-kotlinx-serialization-json" }
-okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor" }
+okhttp-bom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref = "okhttp" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp" }
 
 navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidx-navigation" }
 navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidx-navigation" }
@@ -111,9 +121,9 @@ firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashly
 firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
 firebase-remoteConfig = { group = "com.google.firebase", name = "firebase-config-ktx" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database-ktx" }
-firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore-ktx"}
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore-ktx" , version.ref = "firebase-firestore-ktx"}
 firebase-storage = { group = "com.google.firebase", name = "firebase-storage-ktx"}
-
+firebase-common = { group = "com.google.firebase", name = "firebase-common-ktx", version.ref = "firebase-common-ktx" }
 encrypted-preferences = { group = "androidx.security", name = "security-crypto-ktx", version.ref = "androidx-encrypted-shared-preferences"}
 
 
@@ -132,16 +142,20 @@ kakao-story = {group = "com.kakao.sdk", name="v2-story", version.ref = "kakao-sd
 kakao-link = {group = "com.kakao.sdk", name="v2-link", version.ref = "kakao-sdk"}
 kakao-navi = {group = "com.kakao.sdk", name="v2-navi", version.ref = "kakao-sdk"}
 skeleton-ui = {group = "com.facebook.shimmer", name="shimmer", version.ref = "skeleton-ui"}
+play-services-measurement-api = { group = "com.google.android.gms", name = "play-services-measurement-api", version.ref = "play-services-measurement-api" }
+
+
 
 
 
 [plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
 com-android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 google-services = { id = "com.google.gms.google-services", version.ref= "google-services" }
 firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref= "firebase-crashlytics" }
