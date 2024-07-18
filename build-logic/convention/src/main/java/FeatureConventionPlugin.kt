@@ -18,7 +18,7 @@ internal class FeatureConventionPlugin : Plugin<Project> {
             val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
             dependencies {
                 "implementation"(project(":core:base"))
-                "implementation"(project(":core:data"))
+                "implementation"(project(":core:data")) //todo - ?
 
                 "implementation"(libs.findLibrary("appcompat").get())
                 "implementation"(libs.findLibrary("core.ktx").get())
